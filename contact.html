@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Fórmula 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="services.html">Temporada</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="drivers.html">pilotos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Entre em Contato Conosco</h1>
+            <p>Preencha o formulário abaixo para entrar em contato conosco. Teremos o prazer em responder às suas perguntas e ouvir seus comentários sobre a Fórmula 1!</p>
+
+            <!-- Formulário de Contato -->
+            <form action="process_form.php" method="post" enctype="multipart/form-data">
+                <!-- Campo de Informações Pessoais -->
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <label for="nome">Nome Completo:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="telefone">Telefone:</label><br>
+                    <input type="tel" id="telefone" name="telefone" required><br><br>
+                </fieldset>
+
+                <!-- Campo de Preferências -->
+                <fieldset>
+                    <legend>Preferências</legend>
+                    <label for="assunto">Assunto:</label><br>
+                    <select id="assunto" name="assunto">
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="outro">Outro</option>
+                    </select><br><br>
+
+                    <label>Como você conheceu nosso site?</label><br>
+                    <input type="radio" id="google" name="origem" value="google" required>
+                    <label for="google">Google</label><br>
+                    <input type="radio" id="amigos" name="origem" value="amigos">
+                    <label for="amigos">Amigos</label><br>
+                    <input type="radio" id="redes_sociais" name="origem" value="redes_sociais">
+                    <label for="redes_sociais">Redes Sociais</label><br><br>
+
+                    <label for="interesse">Interesse:</label><br>
+                    <input type="checkbox" id="novidades" name="interesse" value="novidades">
+                    <label for="novidades">Novidades</label><br>
+                    <input type="checkbox" id="eventos" name="interesse" value="eventos">
+                    <label for="eventos">Eventos</label><br>
+                    <input type="checkbox" id="promocoes" name="interesse" value="promocoes">
+                    <label for="promocoes">Promoções</label><br><br>
+                </fieldset>
+
+                <!-- Campo de Upload -->
+                <fieldset>
+                    <legend>Envie um Arquivo</legend>
+                    <label for="arquivo">Anexe um arquivo (aceitamos .jpg, .png, .pdf):</label><br>
+                    <input type="file" id="arquivo" name="arquivo[]" accept=".jpg, .png, .pdf" multiple><br><br>
+                </fieldset>
+
+                <!-- Botões de Ação -->
+                <fieldset>
+                    <legend>Ação</legend>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

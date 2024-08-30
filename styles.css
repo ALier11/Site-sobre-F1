@@ -1,0 +1,231 @@
+/* Estilo Geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fundo cinza claro */
+    color: #333; /* Texto principal em cinza escuro */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #cc0000; /* Vermelho escuro */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffdd00; /* Amarelo */
+}
+
+/* Estilo de Caixa de Conteúdo */
+section {
+    background-color: white; /* Fundo branco */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Títulos Personalizados */
+h1, h2, h3 {
+    color: #cc0000; /* Vermelho */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #fff; /* Sombra de texto */
+}
+
+h1 {
+    font-size: 2.5em;
+    border-bottom: 3px solid #ffdd00; /* Subtítulo amarelo */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Estilo de Formulário */
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9; /* Fundo cinza claro para destacar */
+}
+
+legend {
+    font-weight: bold;
+    color: #333; /* Cinza escuro */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555; /* Texto em cinza */
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #cc0000; /* Vermelho */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ffdd00; /* Amarelo */
+    color: black;
+}
+
+/* Tabela Estilizada */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #cc0000; /* Cabeçalho da tabela vermelho */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Linhas pares com fundo claro */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Efeito hover para melhorar a interação */
+}
+
+/* Imagens e Vídeos */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+/* Seção de Pilotos */
+.drivers-section {
+    background-color: #fff; /* Fundo branco para contraste */
+    border-radius: 8px;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centraliza o título */
+}
+
+.drivers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.driver-card {
+    background-color: #f9f9f9; /* Fundo cinza claro */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+}
+
+.driver-card h2 {
+    color: #cc0000; /* Vermelho */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.driver-card p {
+    color: #555; /* Texto cinza */
+    margin-bottom: 15px;
+}
+
+.driver-photo, .car-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #000; /* Cor de fundo para o contêiner do vídeo */
+    margin: 20px auto; /* Centraliza o vídeo na página */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove a borda */
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
